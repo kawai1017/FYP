@@ -2,9 +2,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/language"
+        android:title="@string/language"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit"
+        app:showAsAction="never"/>
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_settings"
-        android:title="@string/app_name"
+        android:title="@string/setting"
         app:showAsAction="never"/>
 
 </menu>
