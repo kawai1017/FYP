@@ -6,6 +6,7 @@
         android:id="@+id/about"
         android:title="@string/about"
         app:showAsAction="never"/>
+
     <item
         android:id="@+id/language"
         android:title="@string/language"

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+<<<<<<< Updated upstream
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -17,6 +18,9 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+=======
+    
+>>>>>>> Stashed changes
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
