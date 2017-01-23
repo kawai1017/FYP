@@ -1,20 +1,24 @@
 package com.example.chrisngok.fyp;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ImageButton;
+import android.app.Activity;
 
-public class HKMOH_Page1Activity extends AppCompatActivity{
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+
+public class HKMOH_Page1Activity extends Activity {
+
+    MediaPlayer mySound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkmoh_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+        mySound = MediaPlayer.create();
+    }
+
+    public void playSound(View view) {
+        mySound.start();
     }
 
     /*@Override
