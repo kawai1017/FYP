@@ -33,21 +33,5 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.appbar, menu);
         return true;
     }
-
-   /* public void goButtonClicked(View v) {
-        tToast("Go button clicked!");
-    }*/
-
-    /*private void tToast(String s) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, s, duration);
-        toast.show();
-    }/*
-
-    /*public void goHKMOH_Page1(View vs) {
-        Intent myIntent = new Intent(this, HKMOH_Page1Activity.class);
-        startActivity(myIntent);
-    }*/
 }
 
