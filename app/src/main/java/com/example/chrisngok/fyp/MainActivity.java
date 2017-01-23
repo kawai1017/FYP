@@ -6,12 +6,41 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+import android.content.Context;
 
 public class MainActivity extends AppCompatActivity {
-
+    ImageButton ib;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ib = (ImageButton) findViewById(R.id.button_hkmoh);
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent myIntent = new Intent(MainActivity.this, HKMOH_Page1Activity.class);
+                startActivity(myIntent);
+            }
+        });
     }
+
+   /* public void goButtonClicked(View v) {
+        tToast("Go button clicked!");
+    }*/
+
+    /*private void tToast(String s) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, s, duration);
+        toast.show();
+    }/*
+
+    /*public void goHKMOH_Page1(View vs) {
+        Intent myIntent = new Intent(this, HKMOH_Page1Activity.class);
+        startActivity(myIntent);
+    }*/
 }
+
