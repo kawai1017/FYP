@@ -11,11 +11,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-        setContentView(R.layout.intialpage);
-=======
+
         setContentView(R.layout.intial_page);
->>>>>>> origin/master
+
 
         ib = (ImageButton) findViewById(R.id.button_hkmoh);
         ib.setOnClickListener(new View.OnClickListener() {
