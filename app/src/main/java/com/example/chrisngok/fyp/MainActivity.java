@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
         ib = (ImageButton) findViewById(R.id.button_hkmoh);
         ib.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, HKMOH_Page1Activity.class);
                 startActivity(myIntent);
             }
         });
     }
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.appbar, menu);

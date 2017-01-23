@@ -8,18 +8,12 @@ import android.view.View;
 
 public class HKMOH_Page1Activity extends Activity {
 
-    MediaPlayer mySound;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkmoh_main);
-        mySound = MediaPlayer.create(this, R.raw.t_hot);
     }
 
-    public void playSound(View view) {
-        mySound.start();
-    }
 
     /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {

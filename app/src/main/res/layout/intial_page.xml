@@ -15,47 +15,64 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_height="match_parent">
 
-        <ImageButton
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/frontpage_hkmoh"
-            android:id="@+id/button_hkmoh"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:clickable="true"
-            android:onClick="onClick"
-            android:text="@string/hkmoh"
-            android:background="#2C3539"/>
+            android:layout_height="match_parent"
+            android:paddingTop="50dp">
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/frontpage_hkhm"
-            android:id="@+id/button_hkhm"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:text="@string/hkhm"
-            android:background="#2C3539"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/frontpage_hkmoh"
+                android:id="@+id/button_hkmoh"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="@string/hkmoh"
+                android:background="#2C3539" />
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/frontpage_hksm"
-            android:id="@+id/button_hksm"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:text="@string/hksm"
-            android:background="#2C3539"/>
-    </LinearLayout>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/frontpage_hkhm"
+                android:id="@+id/button_hkhm"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:text="@string/hkhm"
+                android:background="#2C3539" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/frontpage_hksm"
+                android:id="@+id/button_hksm"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:text="@string/hksm"
+                android:background="#2C3539" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hk_space"
+                android:id="@+id/button_hkspace"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:text="@string/hkspace"
+                android:background="#2C3539"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+    </ScrollView>
+    >
 </RelativeLayout>

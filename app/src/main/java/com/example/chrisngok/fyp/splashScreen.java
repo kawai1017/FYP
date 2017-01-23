@@ -11,9 +11,9 @@ public class splashScreen extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        Thread myThread = new Thread(){
+        Thread myThread = new Thread() {
             @Override
-            public void run(){
+            public void run() {
                 try {
                     sleep(3000);
                     Intent startMainScreen = new Intent(getApplicationContext(), MainActivity.class);
