@@ -5,8 +5,9 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2C3539"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -16,7 +17,6 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -74,5 +74,4 @@
                 android:adjustViewBounds="true" />
         </LinearLayout>
     </ScrollView>
-    >
 </RelativeLayout>
