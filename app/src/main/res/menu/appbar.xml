@@ -6,7 +6,7 @@
         android:id="@+id/about"
         android:title="@string/about"
         app:showAsAction="never" />
-    <item
+    <!--<item
         android:id="@+id/Text_language"
         android:title="@string/text_language"
         app:showAsAction="never" />
@@ -15,7 +15,11 @@
         android:id="@+id/Audio_language"
         android:title="@string/audio_language"
         app:showAsAction="never"/>
-    
+    <item
+        android:id="@+id/Font_Size"
+        android:title="@string/font_size"
+        app:showAsAction="never"/> -->
+
     <item android:id="@+id/action_settings"
         android:title="@string/setting"
         app:showAsAction="never"/>
