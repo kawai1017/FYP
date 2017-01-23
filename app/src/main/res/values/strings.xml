@@ -5,8 +5,9 @@
     <string name="hksm">Hong Kong Science Museum</string>
     <string name="hkspace">Hong Kong Space Museum</string>
     <string name="about">About</string>
-    <string name="audio_language">Audio_Language</string>
-    <string name="text_language">Text_Language</string>
+    <string name="audio_language">Audio Language</string>
+    <string name="text_language">Text Language</string>
+    <string name="font_size">Font Size</string>
     <string name="exit">Exit</string>
-    <string name="setting">setting</string>
+    <string name="setting">Setting</string>
 </resources>
