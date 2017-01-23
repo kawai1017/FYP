@@ -2,14 +2,23 @@ package com.example.chrisngok.fyp;
 
 import android.app.Activity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 
 public class HKMOH_Page1Activity extends Activity {
+
+    MediaPlayer mySound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkmoh_main);
+        mySound = MediaPlayer.create();
+    }
+
+    public void playSound(View view) {
+        mySound.start();
     }
 
     /*@Override
