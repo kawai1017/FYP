@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="font_size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="audio_language">
+        <item>Cantonese</item>
+        <item>Mandarin</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="text_language">
+        <item>Chinese traditional</item>
+        <item>Chinese simplefied</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="editor_font_size">font_size</string>
+    <string name="editor_font_size_default">Medium</string>
+
+
+    <string name="editor_audio_language">audio_language</string>
+    <string name="editor_audio_language_default">Cantonese</string>
+
+    <string name="editor_text_language">text_langugae</string>
+    <string name="editor_text_language_default">Chinese traditional</string>
+
+</resources>

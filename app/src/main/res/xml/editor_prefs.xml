@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+    android:title="Settings">
+    <ListPreference
+        android:key="@string/editor_font_size"
+        android:title="Font Size"
+        android:summary="Changing the font size"
+        android:entries="@array/font_size"
+        android:entryValues="@array/font_size"
+        android:defaultValue="@string/editor_font_size_default" />
+
+    <ListPreference
+        android:key="@string/editor_text_language"
+        android:title="Text Language"
+        android:summary="Changing the text language"
+        android:entries="@array/text_language"
+        android:entryValues="@array/text_language"
+        android:defaultValue="@string/editor_text_language_default" />
+
+    <ListPreference
+        android:key="@string/editor_audio_language"
+        android:title="Audio Language"
+        android:summary="Changing the audio language"
+        android:entries="@array/audio_language"
+        android:entryValues="@array/audio_language"
+        android:defaultValue="@string/editor_audio_language_default" />
+
+</PreferenceCategory>
+</PreferenceScreen>

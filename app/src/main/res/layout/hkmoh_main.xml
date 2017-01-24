@@ -5,7 +5,8 @@
     android:id="@+id/activity_main2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKMOH_Page1Activity">
+    tools:context=".HKMOH_MainActivity"
+    android:background="@drawable/demo1">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -15,4 +16,40 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <Button
+            android:text="@string/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_us"
+            android:layout_weight="0.05"
+            android:onClick="onClick"
+            android:background="@color/white" />
+
+        <Button
+            android:text="@string/exhibit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exhibit"
+            android:background="@color/white"
+            android:layout_weight="0.05" />
+
+        <Button
+            android:text="@string/transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transport"
+            android:background="@color/white"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
 </RelativeLayout>
