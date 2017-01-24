@@ -39,51 +39,5 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.appbar, menu);
         return true;
     }
-    /*@Override
-    public boolean onOptionsItemsSelected(MenuItem item){
-        super.onOptionsItemSelected(item);
-        switch(item.getItemId()){
-            case R.id.about:
-                aboutMenuItem();
-                break;
-            case R.id.action_settings:
-                settingsMenuItem();
-                break;
-            case R.id.exit:
-                exitMenuItem();
-                break;
-        }
-            return true;
-    }
-    private void aboutMenuItem(){
-        new AlertDialog.Builder(this)
-        .setTitle("About")
-        .setMessage("This is about message dialog")
-        .setNeutralButton("OK", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int whcih){
-            }
-        }).show();
-    }
-    private void settingsMenuItem(){
-        new AlertDialog.Builder(this)
-                .setTitle("Setting")
-                .setMessage("This is setting message dialog")
-        .setNeutralButton("OK", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int whcih){
-            }
-        }).show();
-    }
-    private void exitMenuItem(){
-        new AlertDialog.Builder(this)
-                .setTitle("exit")
-                .setMessage("This is exit message dialog")
-        .setNeutralButton("OK", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int whcih){
-            }
-        }).show();
-    }*/
 }
 
