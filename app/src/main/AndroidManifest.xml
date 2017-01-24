@@ -27,12 +27,15 @@
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan"></activity>
 
-        <activity android:name=".HKMOH_Page1Activity"></activity>
-        <activity android:name=".ble_scanner"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        <activity android:name=".HKMOH_MainActivity"></activity>
+        <activity android:name=".ble_scanner"></activity>
+        <activity android:name=".HKMOH_AboutUsActivity"></activity>
+        <activity android:name="preferenceActivity"
+                  android:label="preference"
+            >
+
+        </activity>
+
     </application>
 
 </manifest>

@@ -19,12 +19,12 @@ public class HKMOH_MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         Button button_about_us = (Button) findViewById(R.id.about_us);
-        button_about_us.setOnClickListener(new View.OnClickListener(){
-        @Override
-        public void onClick(View v) {
-            Intent i=new Intent(HKMOH_MainActivity.this, HKMOH_AboutUsActivity.class);
-            startActivity(i);
-        }
+        button_about_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKMOH_MainActivity.this, HKMOH_AboutUsActivity.class);
+                startActivity(myIntent);
+            }
         });
     }
 

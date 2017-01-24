@@ -6,18 +6,17 @@
         android:id="@+id/about"
         android:title="@string/about"
         app:showAsAction="never"
-        android:onClick="onClick"/>
+        />
 
     <item android:id="@+id/action_settings"
         android:title="@string/setting"
         app:showAsAction="never"
-        android:onClick="onClick"/>
+        />
 
     <item
         android:id="@+id/exit"
         android:title="@string/exit"
         app:showAsAction="never"
-        android:onClick="onClick"/>
-
+        />
 
 </menu>
