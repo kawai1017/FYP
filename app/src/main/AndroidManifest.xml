@@ -24,8 +24,10 @@
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan"></activity>
 
-        <activity android:name=".HKMOH_MainActivity"></activity>
-        <activity android:name=".HKMOH_AboutUsActivity"></activity>
+        <activity android:name=".HKMOH_Page1Activity">
+
+        </activity>
+
     </application>
 
 </manifest>

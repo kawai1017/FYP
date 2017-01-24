@@ -5,29 +5,19 @@
     <item
         android:id="@+id/about"
         android:title="@string/about"
-        app:showAsAction="never" />
-    <!--<item
-        android:id="@+id/Text_language"
-        android:title="@string/text_language"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/Audio_language"
-        android:title="@string/audio_language"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/Font_Size"
-        android:title="@string/font_size"
-        app:showAsAction="never"/> -->
+        app:showAsAction="never"
+        android:onClick="onClick"/>
 
     <item android:id="@+id/action_settings"
         android:title="@string/setting"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:onClick="onClick"/>
 
     <item
         android:id="@+id/exit"
         android:title="@string/exit"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:onClick="onClick"/>
 
 
 </menu>
