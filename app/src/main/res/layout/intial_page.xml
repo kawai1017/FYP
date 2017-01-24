@@ -72,6 +72,13 @@
                 android:text="@string/hkspace"
                 android:background="#2C3539"
                 android:adjustViewBounds="true" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blueboothtest"
+                android:id ="@+id/button_ble"
+                android:onClick=""
+                />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
