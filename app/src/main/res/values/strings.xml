@@ -10,4 +10,22 @@
     <string name="font_size">Font Size</string>
     <string name="exit">Exit</string>
     <string name="setting">Setting</string>
+    <string name="about_us">About us</string>
+    <string name="exhibit">Exhibition</string>
+    <string name="transport">Transport</string>
+    <string name="about_us_content">
+Address :
+100 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong (next to the Hong Kong Science Museum)
+Link to location mapLink to Geospatial Information Map
+Tel. :
+(852) 2724 9042
+Fax. :
+(852) 2724 9090
+Email :
+hkmh@lcsd.gov.hk
+Website :
+http://hk.history.museum
+http://www.lcsd.gov.hk/CE/Museum/History/
+</string>
+
 </resources>
