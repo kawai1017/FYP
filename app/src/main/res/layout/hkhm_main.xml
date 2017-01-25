@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main2"
+    android:id="@+id/activity_main3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKMOH_MainActivity"
-    android:background="@drawable/demo1">
+    tools:context=".HKHM_MainActivity"
+    android:background="@drawable/demo2">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -26,27 +26,27 @@
         android:weightSum="1">
 
         <Button
-            android:text="@string/hkmoh_about_us_default"
+            android:text="@string/hkhm_about_us_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/hkmoh_about_us_default"
+            android:id="@+id/hkhm_about_us_default"
             android:layout_weight="0.05"
             android:onClick="onClick"
             android:background="@color/white" />
 
         <Button
-            android:text="@string/hkmoh_exhibit_default"
+            android:text="@string/hkhm_exhibit_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/hkmoh_exhibit_default"
+            android:id="@+id/hkhm_exhibit_default"
             android:background="@color/white"
             android:layout_weight="0.05" />
 
         <Button
-            android:text="@string/hkmoh_transport_default"
+            android:text="@string/hkhm_transport_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/hkmoh_transport_default"
+            android:id="@+id/hkmh_transport_default"
             android:background="@color/white"
             android:layout_weight="0.05" />
 

@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hkmoh_about_us"
+    android:id="@+id/hkhm_about_us"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKMOH_AboutUsActivity"
+    tools:context=".HKHM_AboutUsActivity"
     android:background="@color/colorPrimaryDark">
 
     <android.support.v7.widget.Toolbar
@@ -27,7 +27,7 @@
 
 
         <TextView
-            android:text="@string/hkmoh_about_us_content_default"
+            android:text="@string/hksm_about_us_content_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView" />

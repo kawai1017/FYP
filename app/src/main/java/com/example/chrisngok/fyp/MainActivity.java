@@ -14,7 +14,10 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton ib;
+    ImageButton hkmoh_button;
+    ImageButton hkhm_button;
+    ImageButton hksm_button;
+    ImageButton hkspacemuseum_button;
     Button ble;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +28,39 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         ble = (Button) findViewById(R.id.button_ble) ;
-        ib = (ImageButton) findViewById(R.id.button_hkmoh);
-        ib.setOnClickListener(new View.OnClickListener() {
+        hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
+        hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivity.this, HKMOH_MainActivity.class);
                 startActivity(myIntent);
             }
         });
+        hkhm_button = (ImageButton) findViewById(R.id.button_hkhm);
+        hkhm_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, HKHM_MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
+        hksm_button = (ImageButton) findViewById(R.id.button_hksm);
+        hksm_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, HKSM_MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
+        hkspacemuseum_button = (ImageButton) findViewById(R.id.button_hkspace);
+        hkspacemuseum_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, HKSpaceMuseum_MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
         ble.setOnClickListener(new View.OnClickListener() {
             @Override
