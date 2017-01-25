@@ -9,12 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class HKSpaceMuseum_MainActivity extends AppCompatActivity {
+public class HKSPACE_MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkspacemuseum_main);
+        setContentView(R.layout.hkspace_main);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
@@ -22,7 +22,7 @@ public class HKSpaceMuseum_MainActivity extends AppCompatActivity {
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(HKSpaceMuseum_MainActivity.this, HKSpaceMuseum_AboutUsActivity.class);
+                Intent myIntent = new Intent(HKSPACE_MainActivity.this, HKSPACE_AboutUsActivity.class);
                 startActivity(myIntent);
             }
         });

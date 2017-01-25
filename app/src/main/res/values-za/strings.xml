@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">香港博物馆导赏</string>
+    <string name="about_us_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
+    <string name="about_us_website1">http://hk.history.museum</string>
+    <string name="about_us_tel">(852) 2724 9042</string>
+    <string name="about_us_fax">(852) 2724 9090</string>
+    <string name="about_us_email">hkmh@lcsd.gov.hk</string>
+    <string name="about_us_addr">香港九龙尖沙咀漆咸道南100号（香港科学馆侧）</string>
+    <string name="about_us">关於我们</string>
+    <string name="about">研发者资讯</string>
+    <string name="audio_language">导赏语言</string>
+    <string name="editor_audio_language_default">英文</string>
+    <string name="editor_font_size_default">中</string>
+    <string name="editor_text_language_default">英文</string>
+    <string name="exhibit">展览</string>
+    <string name="exit">离开</string>
+    <string name="font_size">字体大小</string>
+    <string name="hkhm">香港文化博物馆</string>
+    <string name="hkmoh">香港历史博物馆</string>
+    <string name="hksm">香港科学馆</string>
+    <string name="hkspace">香港太空馆</string>
+    <string name="setting">设定</string>
+    <string name="text_language">文字语言</string>
+    <string name="transport">交通</string>
 </resources>

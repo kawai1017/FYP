@@ -49,10 +49,10 @@
         <activity android:name=".HKSM_MainActivity">
 
         </activity>
-        <activity android:name=".HKSpaceMuseum_MainActivity">
+        <activity android:name=".HKSPACE_MainActivity">
 
         </activity>
-        <activity android:name=".HKSpaceMuseum_AboutUsActivity">
+        <activity android:name=".HKSPACE_AboutUsActivity">
 
         </activity>
     </application>

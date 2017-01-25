@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
-public class HKSpaceMuseum_AboutUsActivity extends AppCompatActivity {
+public class HKSPACE_AboutUsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkspacemuseum_about_us);
+        setContentView(R.layout.hkspace_about_us);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
     }

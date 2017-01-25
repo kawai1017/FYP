@@ -5,7 +5,7 @@
     android:id="@+id/activity_main4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKSpaceMuseum_MainActivity"
+    tools:context=".HKSPACE_MainActivity"
     android:background="@drawable/demo4">
 
     <android.support.v7.widget.Toolbar
@@ -26,7 +26,7 @@
         android:weightSum="1">
 
         <Button
-            android:text="@string/hkspacemuseum_about_us_default"
+            android:text="@string/hkspace_about_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_about_us_default"
@@ -35,7 +35,7 @@
             android:background="@color/white" />
 
         <Button
-            android:text="@string/hkspacemuseum_exhibit_default"
+            android:text="@string/hkspace_exhibit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_exhibit_default"
@@ -43,7 +43,7 @@
             android:layout_weight="0.05" />
 
         <Button
-            android:text="@string/hkspacemuseum_transport_default"
+            android:text="@string/hkspace_transport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_transport_default"

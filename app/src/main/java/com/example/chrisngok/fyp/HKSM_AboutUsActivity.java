@@ -8,7 +8,7 @@ import android.view.Menu;
 public class HKSM_AboutUsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkhm_about_us);
+        setContentView(R.layout.hksm_about_us);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
     }

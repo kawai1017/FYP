@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hksm_about_us"
+    android:id="@+id/hkspace_about_us"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKSM_AboutUsActivity"
+    tools:context=".HKSPACE_AboutUsActivity"
     android:background="@color/background">
 
     <android.support.v7.widget.Toolbar

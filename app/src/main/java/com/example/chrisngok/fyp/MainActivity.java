@@ -1,10 +1,6 @@
 package com.example.chrisngok.fyp;
 
-import android.app.Dialog;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.preference.PreferenceFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -13,13 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton hkmoh_button;
     ImageButton hkhm_button;
     ImageButton hksm_button;
-    ImageButton hkspacemuseum_button;
+    ImageButton hkspace_button;
     Button ble;
 
     @Override
@@ -55,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-        hkspacemuseum_button = (ImageButton) findViewById(R.id.button_hkspace);
-        hkspacemuseum_button.setOnClickListener(new View.OnClickListener() {
+        hkspace_button = (ImageButton) findViewById(R.id.button_hkspace);
+        hkspace_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, HKSpaceMuseum_MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, HKSPACE_MainActivity.class);
                 startActivity(myIntent);
             }
         });
