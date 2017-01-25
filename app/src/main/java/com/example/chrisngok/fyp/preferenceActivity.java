@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class preferenceActivity extends AppCompatActivity{
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     FragmentManager fragmentManager = getFragmentManager();
