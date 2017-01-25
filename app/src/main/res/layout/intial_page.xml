@@ -65,7 +65,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/hk_space"
+                app:srcCompat="@drawable/frontpage_hkspacemuseum"
                 android:id="@+id/button_hkspace"
                 android:scaleType="fitXY"
                 android:layout_weight="1"

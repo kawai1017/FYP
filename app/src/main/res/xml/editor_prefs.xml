@@ -29,7 +29,8 @@
             android:entryValues="@array/audio_language"
             android:key="@string/editor_audio_language"
             android:summary="Changing the audio language"
-            android:title="Audio Language" />
+            android:title="Audio Language"
+            />
 
     </PreferenceCategory>
 </PreferenceScreen>
