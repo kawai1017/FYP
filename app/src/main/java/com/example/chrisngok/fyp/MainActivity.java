@@ -1,5 +1,6 @@
 package com.example.chrisngok.fyp;
 
+import android.app.Dialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton hkmoh_button;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton hksm_button;
     ImageButton hkspacemuseum_button;
     Button ble;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

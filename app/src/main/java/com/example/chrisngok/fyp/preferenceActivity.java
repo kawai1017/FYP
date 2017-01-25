@@ -12,7 +12,7 @@ public class preferenceActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
     FragmentManager fragmentManager = getFragmentManager();
     FragmentTransaction transaction = fragmentManager.beginTransaction();
-    edit_perferences prefFragment = new edit_perferences() ;
+    edit_preferences prefFragment = new edit_preferences() ;
     transaction.add(android.R.id.content, prefFragment);
     transaction.commit();
 }

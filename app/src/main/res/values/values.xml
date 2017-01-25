@@ -9,13 +9,13 @@
 
     <string-array name="audio_language">
         <item>Cantonese</item>
-        <item>Mandarin</item>
+        <item>Putonghua</item>
         <item>English</item>
     </string-array>
 
     <string-array name="text_language">
-        <item>Chinese traditional</item>
-        <item>Chinese simplefied</item>
+        <item>Chinese Traditional</item>
+        <item>Chinese Simplified</item>
         <item>English</item>
     </string-array>
 
@@ -24,9 +24,9 @@
 
 
     <string name="editor_audio_language">audio_language</string>
-    <string name="editor_audio_language_default">Cantonese</string>
+    <string name="editor_audio_language_default">English</string>
 
-    <string name="editor_text_language">text_langugae</string>
-    <string name="editor_text_language_default">Chinese traditional</string>
+    <string name="editor_text_language">text_language</string>
+    <string name="editor_text_language_default">English</string>
 
 </resources>
