@@ -30,7 +30,8 @@
                 android:clickable="true"
                 android:onClick="onClick"
                 android:text="@string/hkmoh"
-                android:background="#2C3539" />
+                android:background="#2C3539"
+                android:padding="5dp"/>
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:text="@string/hkhm"
-                android:background="#2C3539" />
+                android:background="#2C3539"
+                android:padding="5dp"/>
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -52,7 +54,8 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:text="@string/hksm"
-                android:background="#2C3539" />
+                android:background="#2C3539"
+                android:padding="5dp"/>
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -63,14 +66,15 @@
                 android:layout_weight="1"
                 android:text="@string/hkspace"
                 android:background="#2C3539"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:padding="5dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/blueboothtest"
                 android:id ="@+id/button_ble"
                 android:onClick=""
-                />
+                android:padding="5dp"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
