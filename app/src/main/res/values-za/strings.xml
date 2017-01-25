@@ -23,4 +23,20 @@
     <string name="setting">设定</string>
     <string name="text_language">文字语言</string>
     <string name="transport">交通</string>
+    <string name="hkhm_about_us">关於我们</string>
+    <string name="app_title"></string>
+    <string name="hkmoh_about_us">关於我们</string>
+    <string name="hkspace_about_us">关於我们</string>
+    <string name="hksm_about_us">关於我们</string>
+    <string name="hkhm_exhibit">展览</string>
+    <string name="hkmoh_exhibit">展览</string>
+    <string name="hksm_exhibit">展览</string>
+    <string name="hkspace_exhibit">展览</string>
+    <string name="hkspace_transport">交通方法</string>
+    <string name="hksm_transport">交通方法</string>
+    <string name="hkmoh_transport">交通方法</string>
+    <string name="hkhm_transport">交通方法</string>
+    <string name="editor_text_language">字体语言</string>
+    <string name="editor_font_size">字体大小</string>
+    <string name="editor_audio_language">录音语言</string>
 </resources>

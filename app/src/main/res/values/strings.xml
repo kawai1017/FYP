@@ -1,4 +1,7 @@
 <resources>
+    <string name="app_title" translatable="false">HKMG</string>
+    <string name="app_about">About This App</string>
+    <string name="app_aboutdes">This is an app developed by ShareLabTrust Team</string>
     <string name="app_name">Hong Kong Museum Guide</string>
     <string name="hkmoh">Hong Kong Museum of History</string>
     <string name="hkhm">Hong Kong Heritage Museum</string>
@@ -33,4 +36,7 @@
     <string name="hkspace_about_us">About us</string>
     <string name="hkspace_exhibit">Exhibition</string>
     <string name="hkspace_transport">Transport</string>
-    </resources>
+    <string name="about_us">About us</string>
+    <string name="transport">Transport</string>
+    <string name="exhibit">Exhibittion</string>
+</resources>

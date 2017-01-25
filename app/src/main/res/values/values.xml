@@ -14,9 +14,9 @@
     </string-array>
 
     <string-array name="text_language">
-        <item>Chinese Traditional</item>
-        <item>Chinese Simplified</item>
-        <item>English</item>
+        <item>zh</item>
+        <item>za</item>
+        <item>en</item>
     </string-array>
 
     <string name="editor_font_size">font_size</string>
@@ -27,6 +27,6 @@
     <string name="editor_audio_language_default">English</string>
 
     <string name="editor_text_language">text_language</string>
-    <string name="editor_text_language_default">English</string>
+    <string name="editor_text_language_default">en</string>
 
 </resources>
