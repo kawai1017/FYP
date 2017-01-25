@@ -5,7 +5,7 @@
     android:id="@+id/activity_main4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HKSPACE_MainActivity"
+    tools:context=".HKSpaceMainActivity"
     android:background="@drawable/demo4">
 	<include layout="@layout/toolbar"/>
     <LinearLayout

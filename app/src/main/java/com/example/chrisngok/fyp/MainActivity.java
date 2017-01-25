@@ -1,12 +1,7 @@
 package com.example.chrisngok.fyp;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -51,7 +46,7 @@ public class MainActivity extends BaseActivity {
         hkspace_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, HKSPACE_MainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, HKSpaceMainActivity.class);
                 startActivity(myIntent);
             }
         });
