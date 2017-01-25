@@ -1,7 +1,9 @@
 package com.example.chrisngok.fyp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -30,30 +32,37 @@ public abstract class BaseActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.about:
-
+                AlertDialog alertDialog = new AlertDialog.Builder(BaseActivity.this).create();
+                alertDialog.setTitle("About This APP:");
+                alertDialog.setMessage("This is an app developed by ShareLabTrust Team");
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.show();
                 return true;
             case R.id.action_settings:
                 Intent myIntent = new Intent(getBaseContext(), preferenceActivity.class);
                 startActivity(myIntent);
                 return true;
             case R.id.exit:
-                finish();
+                onDestroy();
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        onDestroy();
+    }
+
+    protected void onDestroy(){
+        super.onDestroy();
+        //Kill myself
+        android.os.Process.killProcess(android.os.Process.myPid());
     }
 }
-    /*public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                FragmentManager fm = getSupportFragmentManager();
-                if (fm != null && fm.getBackStackEntryCount() > 0) {
-                    fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                } else {
-                    finish();
-                }
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }*/
