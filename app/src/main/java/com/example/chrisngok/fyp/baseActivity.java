@@ -2,25 +2,36 @@ package com.example.chrisngok.fyp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.LayoutRes;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
+import android.widget.ListView;
 
-public class baseActivity extends AppCompatActivity{
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+public abstract class BaseActivity extends AppCompatActivity {
+
+    private Menu menu;
+    private void setUpToolBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
-    @Override
+    public void  setContentView(int layoutResID){
+        super.setContentView(layoutResID);
+        setUpToolBar();
+    }
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.appbar, menu);
-        return true;
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.appbar, menu);
+        return super.onCreateOptionsMenu(menu);
     }
-
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
@@ -28,7 +39,7 @@ public class baseActivity extends AppCompatActivity{
 
                 return true;
             case R.id.action_settings:
-                Intent myIntent = new Intent(this, preferenceActivity.class);
+                Intent myIntent = new Intent(getBaseContext(), preferenceActivity.class);
                 startActivity(myIntent);
                 return true;
             case R.id.exit:
@@ -38,3 +49,17 @@ public class baseActivity extends AppCompatActivity{
         }
     }
 }
+    /*public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                FragmentManager fm = getSupportFragmentManager();
+                if (fm != null && fm.getBackStackEntryCount() > 0) {
+                    fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                } else {
+                    finish();
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }*/

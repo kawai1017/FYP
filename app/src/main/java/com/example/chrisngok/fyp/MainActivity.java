@@ -1,6 +1,7 @@
 package com.example.chrisngok.fyp;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -10,22 +11,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     ImageButton hkmoh_button;
     ImageButton hkhm_button;
     ImageButton hksm_button;
     ImageButton hkspace_button;
     Button ble;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intial_page);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-
-        ble = (Button) findViewById(R.id.button_ble) ;
+       ble = (Button) findViewById(R.id.button_ble);
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,8 +66,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+
+}
+
+
+    /*public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.appbar, menu);
         return true;
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 
-}
+
 

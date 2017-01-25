@@ -9,15 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class HKSM_MainActivity extends AppCompatActivity {
+public class HKSM_MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hksm_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-
         Button button_about_us = (Button) findViewById(R.id.hksm_about_us_default);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,9 +25,4 @@ public class HKSM_MainActivity extends AppCompatActivity {
         });
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.appbar, menu);
-        return true;
-    }
 }
