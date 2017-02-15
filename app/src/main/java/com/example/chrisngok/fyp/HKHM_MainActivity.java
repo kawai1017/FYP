@@ -25,5 +25,4 @@ public class HKHM_MainActivity extends BaseActivity {
             }
         });
     }
-
 }

@@ -38,5 +38,9 @@
     <string name="hkhm_transport">交通方法</string>
     <string name="editor_text_language">字体语言</string>
     <string name="editor_font_size">字体大小</string>
-    <string name="editor_audio_language">录音语言</string>
+    <string name="editor_audio_language">导赏语言</string>
+    <string name="app_Settings">应用程式设定</string>
+    <string name="text_language_sum">更改文字语言</string>
+    <string name="audio_language_sum">更改导赏语言</string>
+    <string name="font_size_sum">更改字体大小</string>
 </resources>

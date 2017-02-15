@@ -1,6 +1,7 @@
 package com.example.chrisngok.fyp;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,31 +63,9 @@ public class MainActivity extends BaseActivity {
 
     }
 
+
 }
 
-
-    /*public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.appbar, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.about:
-
-                return true;
-            case R.id.action_settings:
-                Intent myIntent = new Intent(MainActivity.this, preferenceActivity.class);
-                startActivity(myIntent);
-                return true;
-            case R.id.exit:
-                finish();
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }*/
 
 
 

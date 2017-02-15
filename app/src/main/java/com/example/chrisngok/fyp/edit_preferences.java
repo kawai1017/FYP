@@ -1,4 +1,5 @@
 package com.example.chrisngok.fyp;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -20,25 +21,29 @@ public class edit_preferences extends PreferenceFragment implements SharedPrefer
         addPreferencesFromResource(R.xml.editor_prefs);
     }
 
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key)
-    {
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
-        if (key.equals("lang"))
+        if(key.equals("lang"))
         {
-            // update language
-            Locale myLocale = new Locale(sharedPreferences.getString("lang",""));
-            Resources res = getResources();
-            DisplayMetrics dm = res.getDisplayMetrics();
-            Configuration conf = res.getConfiguration();
-            conf.locale = myLocale;
-            res.updateConfiguration(conf, dm);
-            Intent refresh = new Intent(this.getContext(), MainActivity.class);
-            startActivity(refresh);
-
+            Preference connectionPref = findPreference(key);
+            changeLanguagePref(getContext(), sharedPreferences.getString(key, ""));
         }
     }
-
-
+    private void changeLanguagePref(Context context, String lang) {
+        Locale locale = null;
+        if (lang.matches("Traditional Chinese|繁|繁")) {
+            locale = new Locale("zh");//("zh_rTW");
+        } else if (lang.matches("Simplified Chinese|簡|简")) {
+            locale = new Locale("za");//("zh_rCN");
+        } else if( lang.matches("English|英|英")){
+            locale = new Locale("en");//("en");
+        }
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        context.getResources().updateConfiguration(config, null);
+        ((preferenceActivity) getActivity()).restartFragment();
+    }
 
     @Override
     public void onResume() {

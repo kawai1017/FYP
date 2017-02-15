@@ -1,14 +1,17 @@
 package com.example.chrisngok.fyp;
 
 
+import android.app.Application;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 
 
-public class preferenceActivity extends AppCompatActivity{
+public class preferenceActivity extends AppCompatActivity {
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,4 +23,9 @@ public class preferenceActivity extends AppCompatActivity{
     transaction.commit();
     }
 
+    public void restartFragment() {
+        edit_preferences fragment = new edit_preferences();
+        getFragmentManager().beginTransaction().replace(android.R.id.content, fragment).commit();
+
+    }
 }

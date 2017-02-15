@@ -3,6 +3,7 @@ package com.example.chrisngok.fyp;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.content.res.Configuration;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,9 +11,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import java.util.Locale;
+
 
 public abstract class BaseActivity extends AppCompatActivity {
-
     private Menu menu;
     private void setUpToolBar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -55,14 +57,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        onDestroy();
-    }
 
+    /*
     protected void onDestroy(){
         super.onDestroy();
         //Kill myself
         android.os.Process.killProcess(android.os.Process.myPid());
-    }
+    } */
 }

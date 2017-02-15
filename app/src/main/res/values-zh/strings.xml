@@ -36,7 +36,11 @@
     <string name="hkspace_transport">交通方法</string>
     <string name="hkspace_about_us">關於我們</string>
     <string name="hkmoh_exhibit">展覽</string>
-    <string name="editor_audio_language">錄音語言</string>
+    <string name="editor_audio_language">導賞語言</string>
     <string name="editor_font_size">字體大小</string>
     <string name="editor_text_language">字體語言</string>
+    <string name="app_Settings">應用程式設定</string>
+    <string name="text_language_sum">更改文字語言</string>
+    <string name="audio_language_sum">更改導賞語言</string>
+    <string name="font_size_sum">更改字體大小</string>
 </resources>
