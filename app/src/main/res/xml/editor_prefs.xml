@@ -3,17 +3,17 @@
 
     <PreferenceCategory android:title="@string/app_Settings">
         <ListPreference
-            android:defaultValue="@string/editor_font_size_default"
+            android:defaultValue="M"
             android:entries="@array/font_size"
-            android:entryValues="@array/font_size"
+            android:entryValues="@array/font_size_value"
             android:key="fontsize"
             android:summary="@string/font_size_sum"
             android:title="@string/font_size" />
 
         <ListPreference
-            android:defaultValue="@string/editor_text_language_default"
+            android:defaultValue="en"
             android:entries="@array/text_language"
-            android:entryValues="@array/text_language"
+            android:entryValues="@array/text_language_value"
             android:key="lang"
             android:summary="@string/text_language_sum"
             android:title="@string/text_language" />
@@ -21,7 +21,7 @@
         <ListPreference
             android:defaultValue="@string/editor_audio_language_default"
             android:entries="@array/audio_language"
-            android:entryValues="@array/audio_language"
+            android:entryValues="@array/audio_language_value"
             android:key="audiolang"
             android:summary="@string/audio_language_sum"
             android:title="@string/audio_language"

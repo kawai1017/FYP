@@ -10,6 +10,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -31,11 +32,11 @@ public class edit_preferences extends PreferenceFragment implements SharedPrefer
     }
     private void changeLanguagePref(Context context, String lang) {
         Locale locale = null;
-        if (lang.matches("Traditional Chinese|繁|繁")) {
-            locale = new Locale("zh");//("zh_rTW");
-        } else if (lang.matches("Simplified Chinese|簡|简")) {
-            locale = new Locale("za");//("zh_rCN");
-        } else if( lang.matches("English|英|英")){
+        if (lang.matches("zh")) {
+            locale = new Locale("zh");//("zh");
+        } else if (lang.matches("cn")) {
+            locale = new Locale("za");//("za);
+        } else if( lang.matches("en")){
             locale = new Locale("en");//("en");
         }
         Locale.setDefault(locale);
