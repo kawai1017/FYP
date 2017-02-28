@@ -26,7 +26,7 @@ public class MainActivity extends BaseActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "en");
 
-       ble = (Button) findViewById(R.id.button_ble);
+       
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,15 +60,6 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-
-        ble.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, ble_scanner.class);
-                startActivity(myIntent);
-            }
-        });
-
     }
 
     @Override
@@ -77,7 +68,7 @@ public class MainActivity extends BaseActivity {
         String currentlang = preferences.getString("lang","en");
          if(!startlang.matches(currentlang)){
             recreate();
-        } 
+        }
         super.onResume();
     }
 
