@@ -1,7 +1,9 @@
 package com.example.chrisngok.fyp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -10,11 +12,13 @@ import android.widget.Button;
 
 
 public class HKMOH_MainActivity extends BaseActivity {
+    String startlang;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkmoh_main);
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        startlang = preferences.getString("lang", "en");
         Button button_about_us = (Button) findViewById(R.id.hkmoh_about_us_default);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,6 +27,15 @@ public class HKMOH_MainActivity extends BaseActivity {
                 startActivity(myIntent);
             }
         });
+    }
+    @Override
+    protected void onResume() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String currentlang = preferences.getString("lang"," ");
+        if(!startlang.matches(currentlang)){
+            recreate();
+        }
+        super.onResume();
     }
 
 }

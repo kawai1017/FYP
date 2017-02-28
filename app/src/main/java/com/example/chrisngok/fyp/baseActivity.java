@@ -3,19 +3,28 @@ package com.example.chrisngok.fyp;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.Locale;
 
 
 public abstract class BaseActivity extends AppCompatActivity {
     private Menu menu;
+
+
     private void setUpToolBar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,7 +65,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
 
     }
-
 
     /*
     protected void onDestroy(){
