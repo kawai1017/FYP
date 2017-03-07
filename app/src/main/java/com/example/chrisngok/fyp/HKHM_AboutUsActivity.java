@@ -14,7 +14,7 @@ public class HKHM_AboutUsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkhm_about_us);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "en");
+        startlang = preferences.getString("lang", "");
     }
 
     @Override

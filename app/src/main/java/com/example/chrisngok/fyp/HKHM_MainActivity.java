@@ -16,7 +16,7 @@ public class HKHM_MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkhm_main);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "en");
+        startlang = preferences.getString("lang", "");
 
         Button button_about_us = (Button) findViewById(R.id.hkhm_about_us_default);
         button_about_us.setOnClickListener(new View.OnClickListener() {

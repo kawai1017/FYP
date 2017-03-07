@@ -18,7 +18,7 @@ public class HKMOH_MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkmoh_main);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "en");
+        startlang = preferences.getString("lang", "");
         Button button_about_us = (Button) findViewById(R.id.hkmoh_about_us_default);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class HKMOH_MainActivity extends BaseActivity {
     @Override
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang"," ");
+        String currentlang = preferences.getString("lang","");
         if(!startlang.matches(currentlang)){
             recreate();
         }

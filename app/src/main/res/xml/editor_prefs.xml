@@ -19,7 +19,7 @@
             android:title="@string/text_language" />
 
         <ListPreference
-            android:defaultValue="@string/editor_audio_language_default"
+            android:defaultValue="English"
             android:entries="@array/audio_language"
             android:entryValues="@array/audio_language_value"
             android:key="audiolang"

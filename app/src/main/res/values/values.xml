@@ -19,14 +19,4 @@
         <item>English</item>
     </string-array>
 
-    <string name="editor_font_size">font_size</string>
-    <string name="editor_font_size_default">Medium</string>
-
-
-    <string name="editor_audio_language">audio_language</string>
-    <string name="editor_audio_language_default">English</string>
-
-    <string name="editor_text_language">text_language</string>
-    <string name="editor_text_language_default">English</string>
-
 </resources>

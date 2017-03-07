@@ -17,7 +17,6 @@ public class MainActivity extends BaseActivity {
     ImageButton hkhm_button;
     ImageButton hksm_button;
     ImageButton hkspace_button;
-    Button ble;
     String startlang;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +25,7 @@ public class MainActivity extends BaseActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "en");
 
-       
+
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override
