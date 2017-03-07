@@ -98,13 +98,6 @@ public class MainActivity extends BaseActivity {
 
 
 
-        ble.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, ble_scanner.class);
-                startActivity(myIntent);
-            }
-        });
         beaconManager = new BeaconManager(this);
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
             @Override
