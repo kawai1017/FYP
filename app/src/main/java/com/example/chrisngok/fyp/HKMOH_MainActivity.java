@@ -27,6 +27,14 @@ public class HKMOH_MainActivity extends BaseActivity {
                 startActivity(myIntent);
             }
         });
+        Button button_exhibit = (Button) findViewById(R.id.hkmoh_exhibit_default);
+        button_exhibit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKMOH_MainActivity.this, ble_scanner.class);
+                startActivity(myIntent);
+            }
+        });
     }
     @Override
     protected void onResume() {
@@ -37,5 +45,7 @@ public class HKMOH_MainActivity extends BaseActivity {
         }
         super.onResume();
     }
+
+
 
 }
