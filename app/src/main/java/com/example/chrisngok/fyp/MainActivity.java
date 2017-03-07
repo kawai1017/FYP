@@ -97,7 +97,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-<<<<<<< HEAD
+
 
         ble.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,8 +120,7 @@ public class MainActivity extends BaseActivity {
         });
         region = new Region("ranged region",
                 UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
-=======
->>>>>>> origin/master
+
     }
 
     @Override
