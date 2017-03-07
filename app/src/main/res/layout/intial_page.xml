@@ -68,13 +68,6 @@
                 android:background="#2C3539"
                 android:adjustViewBounds="true"
                 android:padding="5dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/blueboothtest"
-                android:id ="@+id/button_ble"
-                android:onClick=""
-                android:padding="5dp"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -63,7 +63,7 @@ public class MainActivity extends BaseActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "en");
 
-       ble = (Button) findViewById(R.id.button_ble);
+       
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +97,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+<<<<<<< HEAD
 
         ble.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +120,8 @@ public class MainActivity extends BaseActivity {
         });
         region = new Region("ranged region",
                 UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+=======
+>>>>>>> origin/master
     }
 
     @Override
