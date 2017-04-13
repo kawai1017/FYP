@@ -14,41 +14,32 @@ import com.estimote.sdk.connection.internal.protocols.Operation;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 public class bleApp extends Application {
 
     private BeaconManager beaconManager;
-
+/*
     @Override
     public void onCreate() {
         super.onCreate();
 
         beaconManager = new BeaconManager(getApplicationContext());
+        beaconManager.setBackgroundScanPeriod(TimeUnit.SECONDS.toMillis(10),0); //scan peroid setting
 
-        beaconManager.setMonitoringListener(new BeaconManager.MonitoringListener() {
-            @Override
-            public void onEnteredRegion(Region region, List<Beacon> list) {
-                showNotification(
-                        "Beacon found","test");
-            }
-            @Override
-            public void onExitedRegion(Region region) {
-                showNotification("Beacon left","test");
-            }
-        });
         beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
             @Override
             public void onServiceReady() {
                 beaconManager.startMonitoring(new Region(
                         "monitored region",
-                        UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"),
-                        15083, 17427));
+                        null,
+                        null, null));
 
             }
         });
     }
-
-    public void showNotification(String title, String message) {
+*/
+    /*public void showNotification(String title, String message) {
         Intent notifyIntent = new Intent(this, MainActivity.class);
         notifyIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivities(this, 0,
@@ -64,5 +55,5 @@ public class bleApp extends Application {
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(1, notification);
-    }
+    }*/
 }

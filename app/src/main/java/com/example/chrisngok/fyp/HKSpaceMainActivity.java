@@ -26,4 +26,12 @@ public class HKSpaceMainActivity extends BaseActivity {
             }
         });
     }
+    protected void onResume() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String currentlang = preferences.getString("lang","");
+        if(!startlang.matches(currentlang)){
+            recreate();
+        }
+        super.onResume();
+    }
 }

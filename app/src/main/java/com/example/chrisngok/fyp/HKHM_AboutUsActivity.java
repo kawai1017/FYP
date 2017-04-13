@@ -20,7 +20,7 @@ public class HKHM_AboutUsActivity extends BaseActivity {
     @Override
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang"," ");
+        String currentlang = preferences.getString("lang","");
         if(!startlang.matches(currentlang)){
             recreate();
         }
