@@ -1,22 +1,16 @@
 package com.example.chrisngok.fyp;
+
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
-import android.util.DisplayMetrics;
-import android.util.Log;
-import android.widget.Toast;
 
 import java.util.Locale;
 
 
 public class edit_preferences extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.editor_prefs);
@@ -24,19 +18,19 @@ public class edit_preferences extends PreferenceFragment implements SharedPrefer
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
-        if(key.equals("lang"))
-        {
+        if (key.equals("lang")) {
             Preference connectionPref = findPreference(key);
             changeLanguagePref(getContext(), sharedPreferences.getString(key, ""));
         }
     }
+
     private void changeLanguagePref(Context context, String lang) {
         Locale locale = null;
         if (lang.matches("zh")) {
             locale = new Locale("zh");//("zh");
         } else if (lang.matches("cn")) {
             locale = new Locale("za");//("za);
-        } else if( lang.matches("en")){
+        } else if (lang.matches("en")) {
             locale = new Locale("en");//("en");
         }
         Locale.setDefault(locale);

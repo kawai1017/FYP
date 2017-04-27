@@ -1,10 +1,7 @@
 package com.example.chrisngok.fyp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -72,13 +69,11 @@ public class ble_scanner extends AppCompatActivity {
                 this, android.R.layout.simple_list_item_1);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View v, int position,
-                                    long arg3)
-            {
-                String value = (String)adapter.getItemAtPosition(position);
+                                    long arg3) {
+                String value = (String) adapter.getItemAtPosition(position);
                 // assuming string and if you want to get the value on click of list item
                 // do what you intend to do on click of listview row
             }
@@ -94,8 +89,7 @@ public class ble_scanner extends AppCompatActivity {
                     // TODO: update the UI here
                     zone.setText(str.get(0));
                     adapter.clear();
-                    for (int i=1;i < str.size();i++)
-                    {
+                    for (int i = 1; i < str.size(); i++) {
                         adapter.add(str.get(i));
                     }
                     ;
