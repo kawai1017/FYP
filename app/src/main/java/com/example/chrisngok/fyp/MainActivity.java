@@ -22,7 +22,6 @@ public class MainActivity extends BaseActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
 
-
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
             @Override

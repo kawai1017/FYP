@@ -55,6 +55,18 @@
             android:layout_weight="0.05"
             android:layout_marginBottom="1dp"
             />
+        <Button
+            android:text="@string/visiting_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/visit"
+            android:background="#66000000"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="0.05"
+            android:layout_marginBottom="1dp"
+            />
+
 
     </LinearLayout>
 
