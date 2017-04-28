@@ -59,4 +59,10 @@
     <string name="zoneb">你现在正位于区域B内</string>
     <string name="zonec">你现在正位于区域C内</string>
     <string name="visiting_information">参观资讯</string>
+    <string name="visiting_information_addr">香港九龙尖沙咀漆咸道南100号（香港科学馆侧）</string>
+    <string name="visiting_information_email">hkmh@lcsd.gov.hk</string>
+    <string name="visiting_information_fax">(852) 2724 9090</string>
+    <string name="visiting_information_tel">(852) 2724 9042</string>
+    <string name="visiting_information_website1">hk.history.museum</string>
+    <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
 </resources>
