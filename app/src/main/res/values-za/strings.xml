@@ -66,4 +66,8 @@
     <string name="voice_en">英文语音介绍</string>
     <string name="voice_za">普通话语音介绍</string>
     <string name="voice_zh">广东话语音介绍</string>
+    <string name="ble_title">博物馆室内地图</string>
+    <string name="zonea">你现在正位于区域A内</string>
+    <string name="zoneb">你现在正位于区域B内</string>
+    <string name="zonec">你现在正位于区域C内</string>
 </resources>

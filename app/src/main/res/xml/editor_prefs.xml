@@ -3,7 +3,7 @@
 
     <PreferenceCategory android:title="@string/app_Settings" >
         <ListPreference
-            android:defaultValue="en"
+            android:defaultValue="@string/editor_text_language_default"
             android:entries="@array/text_language"
             android:entryValues="@array/text_language_value"
             android:key="lang"

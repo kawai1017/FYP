@@ -6,13 +6,12 @@
     <string name="about_us_tel">(852) 2724 9042</string>
     <string name="about_us_fax">(852) 2724 9090</string>
     <string name="about_us_email">hkmh@lcsd.gov.hk</string>
-    <string name="about_us_addr">香港九龍尖沙咀漆咸道南100號（香港科學館側）</string>
+    <string name="about_us_addr">香港九龍尖沙咀漆鹹道南100號（香港科學館側）</string>
     <string name="about_us">關於我們</string>
     <string name="about">研發者資訊</string>
     <string name="audio_language">導賞語言</string>
     <string name="editor_audio_language_default">英文</string>
     <string name="editor_font_size_default">中</string>
-    <string name="editor_text_language_default">英文</string>
     <string name="exhibit">展覽</string>
     <string name="exit">離開</string>
     <string name="font_size">字體大小</string>
@@ -44,8 +43,8 @@
     <string name="audio_language_sum">更改導賞語言</string>
     <string name="font_size_sum">更改字體大小</string>
     <string name="about_des">這個應用程式是ShareLabTrust所開發的。</string>
-    <string name="about_title">关于HKMG:</string>
-    <string name="banana_des">关于香蕉的文字介绍</string>
+    <string name="about_title">關於HKMG:</string>
+    <string name="banana_des">關於香蕉的文字介紹</string>
     <string name="cherry_des">關於車厘子的文字介紹</string>
     <string name="kiwi_des">關於奇異果的文字介紹</string>
     <string name="lemon_des">關於檸檬的文字介紹</string>
@@ -66,4 +65,8 @@
     <string name="voice_en">英文語音介紹</string>
     <string name="voice_za">普通話語音介紹</string>
     <string name="voice_zh">廣東話語音介紹</string>
+    <string name="ble_title">博物館室內地圖</string>
+    <string name="zonea">你現在正位於區域A內</string>
+    <string name="zoneb">你現在正位於區域B內</string>
+    <string name="zonec">你現在正位於區域C內</string>
 </resources>
