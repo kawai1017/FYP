@@ -20,7 +20,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.intial_page);
         getSupportActionBar().setTitle(R.string.app_name);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "en");
+        startlang = preferences.getString("lang", "");
 
 
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
@@ -57,6 +57,15 @@ public class MainActivity extends BaseActivity {
         });
 
 
+    }
+    @Override
+    protected void onResume() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String currentlang = preferences.getString("lang", "");
+        if (!startlang.matches(currentlang)) {
+            recreate();
+        }
+        super.onResume();
     }
 
 }
