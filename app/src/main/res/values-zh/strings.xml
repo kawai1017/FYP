@@ -65,4 +65,9 @@
     <string name="visiting_information_website1">http://hk.history.museum</string>
     <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
     <string name="visiting_information">參觀資訊</string>
+    <string name="telephone">電話</string>
+    <string name="address">地址</string>
+    <string name="email">電郵</string>
+    <string name="fax">傳真</string>
+    <string name="website">網站</string>
 </resources>

@@ -28,7 +28,11 @@
     <string name="visiting_information_email">hkmh@lcsd.gov.hk</string>
     <string name="visiting_information_website1">http://hk.history.museum</string>
     <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
-
+    <string name="address">Address</string>
+    <string name="telephone">Telephone</string>
+    <string name="fax">Fax</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
     <string name="about_us">About us</string>
     <string name="visiting_information">Visiting Information</string>
     <string name="transport">Transport</string>

@@ -65,4 +65,9 @@
     <string name="visiting_information_tel">(852) 2724 9042</string>
     <string name="visiting_information_website1">hk.history.museum</string>
     <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
+    <string name="telephone">电话</string>
+    <string name="address">地址</string>
+    <string name="email">电邮</string>
+    <string name="fax">传真</string>
+    <string name="website">网站</string>
 </resources>
