@@ -19,6 +19,7 @@ public class HKMOH_MainActivity extends BaseActivity {
         setContentView(R.layout.hkmoh_main);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
+
         Button button_about_us = (Button) findViewById(R.id.hkmoh_about_us_default);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,14 @@ public class HKMOH_MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(HKMOH_MainActivity.this, ble_scanner.class);
+                startActivity(myIntent);
+            }
+        });
+        Button button_visiting_information = (Button) findViewById(R.id.hkmoh_visiting_information);
+        button_visiting_information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKMOH_MainActivity.this, HKMOH_VisitingInformation.class);
                 startActivity(myIntent);
             }
         });

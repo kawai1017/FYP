@@ -17,7 +17,7 @@
         android:weightSum="1">
 
         <Button
-            android:text="@string/hkspace_about_us"
+            android:text="@string/about_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_about_us_default"
@@ -26,7 +26,7 @@
             android:background="@color/white" />
 
         <Button
-            android:text="@string/hkspace_exhibit"
+            android:text="@string/exhibit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_exhibit_default"
@@ -34,7 +34,7 @@
             android:layout_weight="0.05" />
 
         <Button
-            android:text="@string/hkspace_transport"
+            android:text="@string/transport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkspacemuseum_transport_default"

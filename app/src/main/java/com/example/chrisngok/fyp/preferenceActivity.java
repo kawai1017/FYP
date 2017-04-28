@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import java.util.prefs.Preferences;
 
 public class preferenceActivity extends AppCompatActivity {
 

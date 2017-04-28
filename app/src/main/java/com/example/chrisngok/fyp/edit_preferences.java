@@ -8,6 +8,7 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 
 import java.util.Locale;
+import java.util.prefs.Preferences;
 
 
 public class edit_preferences extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -39,6 +40,7 @@ public class edit_preferences extends PreferenceFragment implements SharedPrefer
         context.getResources().updateConfiguration(config, null);
         ((preferenceActivity) getActivity()).restartFragment();
     }
+
 
     @Override
     public void onResume() {

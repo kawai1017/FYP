@@ -43,4 +43,11 @@
     <string name="text_language_sum">更改文字語言</string>
     <string name="audio_language_sum">更改導賞語言</string>
     <string name="font_size_sum">更改字體大小</string>
+    <string name="visiting_information_addr">香港九龍尖沙咀漆咸道南100號（香港科學館側）</string>
+    <string name="visiting_information_email">hkmh@lcsd.gov.hk</string>
+    <string name="visiting_information_fax">(852) 2724 9090</string>
+    <string name="visiting_information_tel">(852) 2724 9042</string>
+    <string name="visiting_information_website1">http://hk.history.museum</string>
+    <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
+    <string name="visiting_information">參觀資訊</string>
 </resources>

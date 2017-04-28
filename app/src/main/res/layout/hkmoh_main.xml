@@ -18,16 +18,24 @@
         android:weightSum="1">
 
         <Button
-            android:text="@string/hkmoh_about_us"
+            android:text="@string/about_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkmoh_about_us_default"
             android:layout_weight="0.05"
             android:onClick="onClick"
             android:background="@color/white" />
+        <Button
+            android:text="@string/visiting_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hkmoh_visiting_information"
+            android:layout_weight="0.05"
+            android:onClick="onClick"
+            android:background="@color/white" />
 
         <Button
-            android:text="@string/hkmoh_exhibit"
+            android:text="@string/exhibit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkmoh_exhibit_default"
@@ -35,7 +43,7 @@
             android:layout_weight="0.05" />
 
         <Button
-            android:text="@string/hkmoh_transport"
+            android:text="@string/transport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hkmoh_transport_default"
