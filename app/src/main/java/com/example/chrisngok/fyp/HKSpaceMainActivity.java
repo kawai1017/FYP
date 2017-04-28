@@ -15,6 +15,7 @@ public class HKSpaceMainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkspace_main);
+        getSupportActionBar().setTitle(R.string.hkspace);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
         Button button_about_us = (Button) findViewById(R.id.hkspacemuseum_about_us_default);
@@ -26,10 +27,11 @@ public class HKSpaceMainActivity extends BaseActivity {
             }
         });
     }
+
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang","");
-        if(!startlang.matches(currentlang)){
+        String currentlang = preferences.getString("lang", "");
+        if (!startlang.matches(currentlang)) {
             recreate();
         }
         super.onResume();

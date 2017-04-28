@@ -22,6 +22,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
         setUpToolBar();
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,8 +36,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.about:
                 AlertDialog alertDialog = new AlertDialog.Builder(BaseActivity.this).create();
-                alertDialog.setTitle("About This APP:");
-                alertDialog.setMessage("This is an app developed by ShareLabTrust Team");
+                alertDialog.setTitle(R.string.about_title);
+                alertDialog.setMessage(getResources().getString(R.string.about_des));
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
@@ -50,11 +51,17 @@ public abstract class BaseActivity extends AppCompatActivity {
                 startActivity(myIntent);
                 return true;
             case R.id.exit:
-                onDestroy();
+                killapp();
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 
 
+    protected void killapp() {
+        super.onDestroy();
+        //Kill myself
+        android.os.Process.killProcess(android.os.Process.myPid());
+    }
 }

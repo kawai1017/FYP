@@ -5,19 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.util.Log;
-import com.estimote.sdk.Beacon;
-import com.estimote.sdk.BeaconManager;
-import com.estimote.sdk.Region;
-import com.estimote.sdk.SystemRequirementsChecker;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
 
 public class MainActivity extends BaseActivity {
     ImageButton hkmoh_button;
@@ -30,7 +18,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intial_page);
-
+        getSupportActionBar().setTitle(R.string.app_name);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "en");
 
@@ -69,8 +57,7 @@ public class MainActivity extends BaseActivity {
         });
 
 
-
-        }
+    }
 
 }
 
