@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">香港博物馆导赏</string>
     <string name="about_us_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
-    <string name="about_us_website1">http://hk.history.museum</string>
-    <string name="about_us_tel">(852) 2724 9042</string>
+    <string name="about_us_website1">除了位于漆咸道南的主馆外，香港历史博物馆辖下还有五间分馆，分别位于筲箕湾的香港海防博物馆、深水的李郑屋汉墓博物馆、柴湾的罗屋民俗馆、香港鱼涌公园内的葛量洪号灭火轮展览馆，以及中环半山的孙中山纪念馆。</string>
+    <string name="about_us_tel">香港历史博物馆新馆，总楼面面积17,500平方米，由香港政府拨款港币三亿九千万兴建，是一座综合性的现代化博物馆大楼，建筑物乃由本港巴马丹拿建筑及工程师有限公司(Palmer and Turner Architects and Engineers Ltd.)按照威拿庄信先生(Mr E. Verner Johnson)的建筑概念设计而成；其外型、色调与毗邻的科学馆互相协调，形成一个博物馆组合。</string>
     <string name="about_us_fax">(852) 2724 9090</string>
     <string name="about_us_email">hkmh@lcsd.gov.hk</string>
     <string name="about_us_addr">香港九龙尖沙咀漆咸道南100号（香港科学馆侧）</string>
@@ -70,4 +70,5 @@
     <string name="email">电邮</string>
     <string name="fax">传真</string>
     <string name="website">网站</string>
+    <string name="about_us_message">香港历史博物馆的前身是市政局于1962年在大会堂成立的「香港博物美术馆」。1975年7月，「香港博物美术馆」一分为二，分拆为「香港艺术馆」和「香港博物馆」。新成立的香港博物馆初时租用尖沙咀星光行为馆址，1983年迁往九龙公园临时馆址，1998年7月迁至尖沙咀漆咸道南现址。「香港博物馆」由1998年4月1日起，易名为「香港历史博物馆」。</string>
 </resources>
