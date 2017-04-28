@@ -15,6 +15,7 @@ public class HKHM_MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hkhm_main);
+        getSupportActionBar().setTitle(R.string.hkhm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
         Button button_about_us = (Button) findViewById(R.id.hkhm_about_us_default);
