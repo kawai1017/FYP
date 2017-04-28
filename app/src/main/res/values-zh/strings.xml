@@ -43,4 +43,27 @@
     <string name="text_language_sum">更改文字語言</string>
     <string name="audio_language_sum">更改導賞語言</string>
     <string name="font_size_sum">更改字體大小</string>
+    <string name="about_des">這個應用程式是ShareLabTrust所開發的。</string>
+    <string name="about_title">关于HKMG:</string>
+    <string name="banana_des">关于香蕉的文字介绍</string>
+    <string name="cherry_des">關於車厘子的文字介紹</string>
+    <string name="kiwi_des">關於奇異果的文字介紹</string>
+    <string name="lemon_des">關於檸檬的文字介紹</string>
+    <string name="mango_des">關於芒果的文字介紹</string>
+    <string name="orange_des">關於橙的文字介紹</string>
+    <string name="pear_des">關於梨的文字介紹</string>
+    <string name="strawberry_des">關於士多啤梨的文字介紹</string>
+    <string name="kiwi">奇異果</string>
+    <string name="lemon">檸檬</string>
+    <string name="mango">芒果</string>
+    <string name="orange">橙</string>
+    <string name="pear">梨</string>
+    <string name="strawberry">士多啤梨</string>
+    <string name="apple">蘋果</string>
+    <string name="apple_des">關於蘋果的文字介紹</string>
+    <string name="banana">香蕉</string>
+    <string name="cherry">車厘子</string>
+    <string name="voice_en">英文語音介紹</string>
+    <string name="voice_za">普通話語音介紹</string>
+    <string name="voice_zh">廣東話語音介紹</string>
 </resources>
