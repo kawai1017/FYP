@@ -14,15 +14,23 @@ public class HKHM_MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkhm_main);
+        setContentView(R.layout.museum_main);
         getSupportActionBar().setTitle(R.string.hkhm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
-        Button button_about_us = (Button) findViewById(R.id.hkhm_about_us_default);
+        Button button_about_us = (Button) findViewById(R.id.about_us);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(HKHM_MainActivity.this, HKHM_AboutUsActivity.class);
+                startActivity(myIntent);
+            }
+        });
+        Button button_exhibit = (Button) findViewById(R.id.exhibit);
+        button_exhibit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKHM_MainActivity.this, ble_scanner.class);
                 startActivity(myIntent);
             }
         });

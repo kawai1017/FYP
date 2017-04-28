@@ -11,27 +11,26 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/background_light"
         android:elevation="4dp"
         android:minHeight="156dp"
         android:theme="@android:style/Widget.Material.Light"
-        app:popupTheme="@android:style/Widget.Material.Light.PopupMenu" />
+        app:popupTheme="@android:style/Widget.Material.Light.PopupMenu"
+        android:title=""/>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:paddingTop="56dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="7dp">
+        android:layout_alignParentStart="true">
 
         <TextView
             android:id="@+id/zone"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="zone"
+            android:layout_height="40dp"
+            android:text=""
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textAppearance="@android:style/TextAppearance.Large"
@@ -54,14 +53,16 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
             android:background="@color/white"
-            android:cacheColorHint="@color/white"
-            android:dividerHeight="1dp"
-            android:paddingLeft="2dp"
-            android:scrollbars="horizontal"
-            android:focusableInTouchMode="false"
+            android:cacheColorHint="@android:color/black"
             android:clickable="false"
+            android:divider="@color/background"
+            android:dividerHeight="1dp"
             android:focusable="false"
-            ></ListView>
+            android:focusableInTouchMode="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:paddingLeft="2dp"
+            android:scrollbars="horizontal"></ListView>
     </LinearLayout>
 
 </RelativeLayout>

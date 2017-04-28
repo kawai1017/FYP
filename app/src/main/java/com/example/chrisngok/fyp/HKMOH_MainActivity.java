@@ -13,12 +13,11 @@ public class HKMOH_MainActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkmoh_main);
+        setContentView(R.layout.museum_main);
         getSupportActionBar().setTitle(R.string.hkmoh);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
-
-        Button button_about_us = (Button) findViewById(R.id.hkmoh_about_us_default);
+        Button button_about_us = (Button) findViewById(R.id.about_us);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,7 +25,7 @@ public class HKMOH_MainActivity extends BaseActivity {
                 startActivity(myIntent);
             }
         });
-        Button button_exhibit = (Button) findViewById(R.id.hkmoh_exhibit_default);
+        Button button_exhibit = (Button) findViewById(R.id.exhibit);
         button_exhibit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

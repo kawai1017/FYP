@@ -12,7 +12,7 @@ public class HKSM_AboutUsActivity extends BaseActivity {
         setContentView(R.layout.hksm_about_us);
         getSupportActionBar().setTitle(R.string.hksm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "");
+        startlang = preferences.getString("lang", "English");
     }
 
     @Override

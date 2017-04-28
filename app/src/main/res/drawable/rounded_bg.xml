@@ -6,7 +6,7 @@
     <solid
         android:width="3dp"
         android:color="@color/white" />
-    <!-- add some padding for text inside -->
+    <!-- add some padding for textview inside -->
     <padding
         android:bottom="4dp"
         android:left="4dp"
