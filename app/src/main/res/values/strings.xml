@@ -20,12 +20,32 @@
     <string name="app_Settings">Application Settings</string>
     <string name="setting">Setting</string>
     <string name="blueboothtest">BlueboothTest</string>
-    <string name="visiting_information_addr">100 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong (next to the Hong Kong Science Museum)</string>
-    <string name="visiting_information_tel">(852) 2724 9042</string>
-    <string name="visiting_information_fax">(852) 2724 9090</string>
-    <string name="visiting_information_email">hkmh@lcsd.gov.hk</string>
-    <string name="visiting_information_website1">http://hk.history.museum</string>
-    <string name="visiting_information_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
+    <string name="hkmoh_addr">100 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong (next to the Hong Kong Science Museum)</string>
+    <string name="hkmoh_tel">(852) 2724 9042</string>
+    <string name="hkmoh_fax">(852) 2724 9090</string>
+    <string name="hkmoh_email">hkmh@lcsd.gov.hk</string>
+    <string name="hkmoh_website1">http://hk.history.museum</string>
+    <string name="hkmoh_website2">http://www.lcsd.gov.hk/CE/Museum/History/</string>
+
+    <string name="hkhm_addr">1 Man Lam Road, Sha Tin, Hong Kong.</string>
+    <string name="hkhm_tel">2180 8188</string>
+    <string name="hkhm_fax">2180 8111</string>
+    <string name="hkhm_email">hkhm@lcsd.gov.hk</string>
+    <string name="hkhm_website1">http://www.heritagemuseum.gov.hk</string>
+
+    <string name="hksm_addr">2 Science Museum Road, Tsimshatsui East, Kowloon, Hong Kong.</string>
+    <string name="hksm_tel">2732 3232</string>
+    <string name="hksm_fax">2311 2248</string>
+    <string name="hksm_email">enquiries@hk.science.museum</string>
+    <string name="hksm_website1">http://hk.science.museum</string>
+
+    <string name="hkspace_addr">10 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong.</string>
+    <string name="hkspace_tel">2721 0226</string>
+    <string name="hkspace_fax">2367 8320</string>
+    <string name="hkspace_email">hkspm@lcsd.gov.hk</string>
+    <string name="hkspace_website1">hk.space.museum/</string>
+
+
     <string name="address">Address</string>
     <string name="telephone">Telephone</string>
     <string name="fax">Fax</string>
