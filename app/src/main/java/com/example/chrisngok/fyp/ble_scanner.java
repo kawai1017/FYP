@@ -22,10 +22,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.estimote.sdk.Beacon;
-import com.estimote.sdk.BeaconManager;
-import com.estimote.sdk.Region;
-import com.estimote.sdk.SystemRequirementsChecker;
+
+import com.estimote.coresdk.common.requirements.SystemRequirementsChecker;
+import com.estimote.coresdk.observation.region.beacon.BeaconRegion;
+import com.estimote.coresdk.recognition.packets.Beacon;
+import com.estimote.coresdk.service.BeaconManager;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -65,7 +66,7 @@ public class ble_scanner extends AppCompatActivity {
 
     String startlang;
     private BeaconManager beaconManager;
-    private Region region;
+    private BeaconRegion region;
     private MediaPlayer mp = null;
 
     public static int getImageId(Context context, String imageName) {
@@ -164,9 +165,9 @@ public class ble_scanner extends AppCompatActivity {
             }
         });
         beaconManager = new BeaconManager(this);
-        beaconManager.setRangingListener(new BeaconManager.RangingListener() {
+        beaconManager.setRangingListener(new BeaconManager.BeaconRangingListener() {
             @Override
-            public void onBeaconsDiscovered(Region region, List<Beacon> list) {
+            public void onBeaconsDiscovered(BeaconRegion region, List<Beacon> list) {
                 if (!list.isEmpty()) {
                     Beacon nearestBeacon = list.get(0);
                     List<String> str = placesNearBeacon(nearestBeacon);
@@ -181,7 +182,7 @@ public class ble_scanner extends AppCompatActivity {
                 }
             }
         });
-        region = new Region("ranged region",
+        region = new BeaconRegion("ranged region",
                 UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
     }
 
