@@ -7,7 +7,7 @@ public class HKMOH_VisitingInformation extends BaseActivity {
     String startlang;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hkmoh_visitinginformation);
+        setContentView(R.layout.visitinginformation);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
     }

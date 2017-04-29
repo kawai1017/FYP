@@ -18,6 +18,7 @@ public class HKSM_MainActivity extends BaseActivity {
         getSupportActionBar().setTitle(R.string.hksm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startlang = preferences.getString("lang", "");
+
         Button button_about_us = (Button) findViewById(R.id.about_us);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,14 @@ public class HKSM_MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(HKSM_MainActivity.this, ble_scanner.class);
+                startActivity(myIntent);
+            }
+        });
+        Button button_visiting_information = (Button) findViewById(R.id.visit);
+        button_visiting_information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKSM_MainActivity.this, HKSM_VisitingInformation.class);
                 startActivity(myIntent);
             }
         });

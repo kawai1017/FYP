@@ -37,8 +37,8 @@
         </activity>
         <activity android:name=".ble_scanner"
             android:configChanges="locale" />
-        <activity android:name=".HKMOH_MainActivity"
-            android:label="@string/hkmoh"
+
+        <activity android:name=".HKMOH_MainActivity" android:label="@string/hkmoh"
             android:configChanges="locale" />
 
         <activity android:name=".HKMOH_AboutUsActivity" android:label="@string/hkmoh"
@@ -49,17 +49,23 @@
         <activity android:name=".preferenceActivity"
                   android:label="preference"
             android:configChanges="locale" />
+        <activity android:name=".HKHM_VisitingInformation" android:label="@string/hkhm"
+            android:configChanges="locale" />
 
         <activity android:name=".HKHM_MainActivity" android:label="@string/hkhm"
             android:configChanges="locale" />
 
         <activity android:name=".HKHM_AboutUsActivity" android:label="@string/hkhm"
             android:configChanges="locale" />
+        <activity android:name=".HKSM_VisitingInformation" android:label="@string/hksm"
+            android:configChanges="locale" />
 
         <activity android:name=".HKSM_MainActivity" android:label="@string/hksm"
             android:configChanges="locale" />
 
         <activity android:name=".HKSM_AboutUsActivity" android:label="@string/hksm"
+            android:configChanges="locale" />
+        <activity android:name=".HKSpace_VisitingInformation" android:label="@string/hkspace"
             android:configChanges="locale" />
 
         <activity android:name=".HKSpaceMainActivity" android:label="@string/hkspace"
