@@ -5,69 +5,67 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
     <include layout="@layout/toolbar"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-    
+
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/frontpage_hkmoh"
                 android:id="@+id/button_hkmoh"
-                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:clickable="true"
+                android:elevation="4dp"
                 android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitXY"
                 android:text="@string/hkmoh"
-                android:background="#2C3539"
-                android:padding="5dp"/>
+                app:srcCompat="@drawable/frontpage_hkmoh" />
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/frontpage_hkhm"
                 android:id="@+id/button_hkhm"
-                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:elevation="4dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
                 android:text="@string/hkhm"
-                android:background="#2C3539"
-                android:padding="5dp"/>
+                app:srcCompat="@drawable/frontpage_hkhm" />
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/frontpage_hksm"
                 android:id="@+id/button_hksm"
-                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:elevation="4dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
                 android:text="@string/hksm"
-                android:background="#2C3539"
-                android:padding="5dp"/>
+                app:srcCompat="@drawable/frontpage_hksm" />
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/frontpage_hkspacemuseum"
                 android:id="@+id/button_hkspace"
-                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:layout_weight="1"
+                android:elevation="4dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
                 android:text="@string/hkspace"
-                android:background="#2C3539"
-                android:adjustViewBounds="true"
-                android:padding="5dp"/>
+                app:srcCompat="@drawable/frontpage_hkspacemuseum" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
