@@ -11,7 +11,7 @@ public class HKSpace_VisitingInformation extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.visitinginformation);
+        setContentView(R.layout.museum_visit);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
 

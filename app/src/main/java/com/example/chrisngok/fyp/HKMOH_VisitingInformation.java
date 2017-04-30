@@ -9,7 +9,7 @@ public class HKMOH_VisitingInformation extends BaseActivity {
     String startLang;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.visitinginformation);
+        setContentView(R.layout.museum_visit);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
         ImageView img = (ImageView) findViewById(R.id.imageView3);
