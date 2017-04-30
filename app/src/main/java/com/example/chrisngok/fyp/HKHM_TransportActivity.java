@@ -22,6 +22,7 @@ public class HKHM_TransportActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.museum_transport);
+        getSupportActionBar().setTitle(R.string.transport_title);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
 
