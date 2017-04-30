@@ -31,18 +31,21 @@
         </TableRow>
 
         <TableRow
+
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/addr_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/addr"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
         </TableRow>
 
         <TableRow
@@ -52,12 +55,14 @@
             <TextView
                 android:id="@+id/tel_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/tel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
 
         </TableRow>
 
@@ -68,12 +73,14 @@
             <TextView
                 android:id="@+id/fax_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/fax"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
         </TableRow>
 
         <TableRow
@@ -83,12 +90,14 @@
             <TextView
                 android:id="@+id/email_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:autoLink="email"
                 android:clickable="true" />
         </TableRow>
@@ -100,13 +109,14 @@
             <TextView
                 android:id="@+id/website_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
-
                 android:id="@+id/website1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:autoLink="web"
                 android:clickable="true" />
         </TableRow>
@@ -117,12 +127,14 @@
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/website2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:autoLink="web"
                 android:clickable="true" />
         </TableRow>
