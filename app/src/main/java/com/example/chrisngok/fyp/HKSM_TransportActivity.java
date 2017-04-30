@@ -37,7 +37,7 @@ public class HKSM_TransportActivity extends BaseActivity {
         button_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String uri = "http://maps.google.com/maps?daddr=" + 22.301190 + "," + 114.177835;
+                String uri = "http://maps.google.com/maps?daddr=Hong Kong Science Museum";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 intent.setPackage("com.google.android.apps.maps");
                 try {

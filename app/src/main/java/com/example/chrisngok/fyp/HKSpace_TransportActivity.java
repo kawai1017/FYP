@@ -11,9 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-/**
- * Created by spha0605 on 29/4/2017.
- */
+
 
 public class HKSpace_TransportActivity extends BaseActivity {
     String startLang;
@@ -38,7 +36,7 @@ public class HKSpace_TransportActivity extends BaseActivity {
         button_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String uri = "http://maps.google.com/maps?daddr=" + 22.294316 + "," + 114.171899;
+                String uri = "http://maps.google.com/?q=Hong Kong Space Museum";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 intent.setPackage("com.google.android.apps.maps");
                 try {
