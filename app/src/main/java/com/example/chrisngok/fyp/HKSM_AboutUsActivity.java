@@ -7,14 +7,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HKSM_AboutUsActivity extends BaseActivity {
-    String startlang;
+    String startLang;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_us);
         getSupportActionBar().setTitle(R.string.hksm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "English");
+        startLang = preferences.getString("lang", "English");
 
         ImageView img = (ImageView) findViewById(R.id.imageView3);
         img.setImageResource(R.drawable.frontpage_hksm);
@@ -27,8 +27,8 @@ public class HKSM_AboutUsActivity extends BaseActivity {
     @Override
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang", "");
-        if (!startlang.matches(currentlang)) {
+        String currentLang = preferences.getString("lang", "");
+        if (!startLang.matches(currentLang)) {
             recreate();
         }
         super.onResume();

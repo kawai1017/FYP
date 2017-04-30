@@ -8,14 +8,14 @@ import android.widget.TextView;
 
 
 public class HKHM_AboutUsActivity extends BaseActivity {
-    String startlang;
+    String startLang;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_us);
         getSupportActionBar().setTitle(R.string.hkhm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "");
+        startLang = preferences.getString("lang", "");
 
         ImageView img = (ImageView) findViewById(R.id.imageView3);
         img.setImageResource(R.drawable.frontpage_hkhm);
@@ -27,8 +27,8 @@ public class HKHM_AboutUsActivity extends BaseActivity {
     @Override
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang", "");
-        if (!startlang.matches(currentlang)) {
+        String currentLang = preferences.getString("lang", "");
+        if (!startLang.matches(currentLang)) {
             recreate();
         }
         super.onResume();

@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class HKSpaceMainActivity extends BaseActivity {
-    String startlang;
+public class HKSpace_MainActivity extends BaseActivity {
+    String startLang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,12 @@ public class HKSpaceMainActivity extends BaseActivity {
         setContentView(R.layout.museum_main);
         getSupportActionBar().setTitle(R.string.hkspace);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "");
+        startLang = preferences.getString("lang", "");
         Button button_about_us = (Button) findViewById(R.id.about_us);
         button_about_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(HKSpaceMainActivity.this, HKSpace_AboutUsActivity.class);
+                Intent myIntent = new Intent(HKSpace_MainActivity.this, HKSpace_AboutUsActivity.class);
                 startActivity(myIntent);
             }
         });
@@ -30,7 +30,7 @@ public class HKSpaceMainActivity extends BaseActivity {
         button_exhibit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(HKSpaceMainActivity.this, ble_scanner.class);
+                Intent myIntent = new Intent(HKSpace_MainActivity.this, ble_scanner.class);
                 startActivity(myIntent);
             }
         });
@@ -38,7 +38,15 @@ public class HKSpaceMainActivity extends BaseActivity {
         button_visiting_information.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(HKSpaceMainActivity.this, HKSpace_VisitingInformation.class);
+                Intent myIntent = new Intent(HKSpace_MainActivity.this, HKSpace_VisitingInformation.class);
+                startActivity(myIntent);
+            }
+        });
+        Button button_transport = (Button) findViewById(R.id.transport);
+        button_transport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKSpace_MainActivity.this, HKSpace_TransportActivity.class);
                 startActivity(myIntent);
             }
         });
@@ -46,8 +54,8 @@ public class HKSpaceMainActivity extends BaseActivity {
 
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang", "");
-        if (!startlang.matches(currentlang)) {
+        String currentLang = preferences.getString("lang", "");
+        if (!startLang.matches(currentLang)) {
             recreate();
         }
         super.onResume();

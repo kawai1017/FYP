@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/museum_transport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HKMOH_TransportActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:weightSum="1">
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/transMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+        <TextView
+            android:id="@+id/transport_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/transport_title"
+            android:textSize="20dp"
+            android:background="#99000000"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="@string/button_title"
+                android:textSize="18sp"
+                android:background="#99000000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

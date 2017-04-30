@@ -42,6 +42,14 @@ public class HKHM_MainActivity extends BaseActivity {
                 startActivity(myIntent);
             }
         });
+        Button button_transport = (Button) findViewById(R.id.transport);
+        button_transport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HKHM_MainActivity.this, HKHM_TransportActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
 
     @Override

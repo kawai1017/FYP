@@ -64,7 +64,7 @@ public class ble_scanner extends AppCompatActivity {
         ITEM_BY_BEACONS = Collections.unmodifiableMap(placesByBeacons);
     }
 
-    String startlang;
+    String startLang;
     private BeaconManager beaconManager;
     private BeaconRegion region;
     private MediaPlayer mp = null;

@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
         hkspace_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, HKSpaceMainActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, HKSpace_MainActivity.class);
                 startActivity(myIntent);
             }
         });

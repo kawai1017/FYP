@@ -51,7 +51,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 startActivity(myIntent);
                 return true;
             case R.id.exit:
-                killapp();
+                killApp();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -59,7 +59,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
 
-    protected void killapp() {
+    protected void killApp() {
         super.onDestroy();
         //Kill myself
         android.os.Process.killProcess(android.os.Process.myPid());

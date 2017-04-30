@@ -7,13 +7,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HKSM_VisitingInformation extends BaseActivity {
-    String startlang;
+    String startLang;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.visitinginformation);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "");
+        startLang = preferences.getString("lang", "");
         ImageView img = (ImageView) findViewById(R.id.imageView3);
         img.setImageResource(R.drawable.frontpage_hksm);
 
@@ -45,8 +45,8 @@ public class HKSM_VisitingInformation extends BaseActivity {
 
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang", "");
-        if (!startlang.matches(currentlang)) {
+        String currentLang = preferences.getString("lang", "");
+        if (!startLang.matches(currentLang)) {
             recreate();
         }
         super.onResume();
