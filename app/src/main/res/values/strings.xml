@@ -20,6 +20,7 @@
     <string name="app_Settings">Application Settings</string>
     <string name="setting">Setting</string>
     <string name="blueboothtest">BlueboothTest</string>
+
     <string name="hkmoh_addr">100 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong (next to the Hong Kong Science Museum)</string>
     <string name="hkmoh_tel">(852) 2724 9042</string>
     <string name="hkmoh_fax">(852) 2724 9090</string>
@@ -44,7 +45,6 @@
     <string name="hkspace_fax">2367 8320</string>
     <string name="hkspace_email">hkspm@lcsd.gov.hk</string>
     <string name="hkspace_website1">hk.space.museum/</string>
-
 
     <string name="address">Address</string>
     <string name="telephone">Telephone</string>

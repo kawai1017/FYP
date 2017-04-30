@@ -31,7 +31,7 @@ public class HKMOH_VisitingInformation extends BaseActivity {
         fax.setText(R.string.hkmoh_fax);
 
         TextView email_title = (TextView) findViewById(R.id.email_title);
-        email_title.setText(R.string.fax);
+        email_title.setText(R.string.email);
         TextView email = (TextView) findViewById(R.id.email);
         email.setText(R.string.hkmoh_email);
 
