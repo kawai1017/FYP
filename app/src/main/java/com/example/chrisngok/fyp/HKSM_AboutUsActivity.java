@@ -16,9 +16,9 @@ public class HKSM_AboutUsActivity extends BaseActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "English");
 
-        ImageView img = (ImageView) findViewById(R.id.imageView3);
+        ImageView img = (ImageView) findViewById(R.id.thumbnail);
         img.setImageResource(R.drawable.frontpage_hksm);
-        TextView text = (TextView) findViewById(R.id.about_us_message_show);
+        TextView text = (TextView) findViewById(R.id.textView);
         text.setText(R.string.hksm_about_us_message);
 
     }
