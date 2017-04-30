@@ -61,6 +61,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected void killApp() {
         //Kill myself
-        android.os.Process.killProcess(android.os.Process.myPid());
+        finish();
+        moveTaskToBack(true);
     }
 }
