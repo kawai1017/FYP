@@ -15,9 +15,9 @@ public class HKSpace_AboutUsActivity extends BaseActivity {
         getSupportActionBar().setTitle(R.string.hkspace);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
-        ImageView img = (ImageView) findViewById(R.id.imageView3);
+        ImageView img = (ImageView) findViewById(R.id.thumbnail);
         img.setImageResource(R.drawable.frontpage_hkspacemuseum);
-        TextView text = (TextView) findViewById(R.id.about_us_message_show);
+        TextView text = (TextView) findViewById(R.id.textView);
         text.setText(R.string.hkspace_about_us_message);
 
 

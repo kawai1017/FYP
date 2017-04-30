@@ -12,14 +12,14 @@ public class HKHM_AboutUsActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_us);
+        setContentView(R.layout.museum_about_us);
         getSupportActionBar().setTitle(R.string.hkhm);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
 
-        ImageView img = (ImageView) findViewById(R.id.imageView3);
+        ImageView img = (ImageView) findViewById(R.id.thumbnail);
         img.setImageResource(R.drawable.frontpage_hkhm);
-        TextView text = (TextView) findViewById(R.id.about_us_message_show);
+        TextView text = (TextView) findViewById(R.id.textView);
         text.setText(R.string.hkhm_about_us_message);
 
 
