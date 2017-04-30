@@ -30,7 +30,7 @@ public class HKSpace_MainActivity extends BaseActivity {
         button_exhibit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(HKSpace_MainActivity.this, ble_scanner.class);
+                Intent myIntent = new Intent(HKSpace_MainActivity.this, HKSpace_ExhibitActivity.class);
                 startActivity(myIntent);
             }
         });

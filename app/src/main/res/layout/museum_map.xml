@@ -11,14 +11,31 @@
     <include layout="@layout/toolbar" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
         android:weightSum="1">
 
 
+        <ImageView
+            android:id="@+id/mMap"
+            android:layout_width="match_parent"
+            android:layout_height="467dp"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:padding="10dp" />
+
+
+        <Button
+            android:id="@+id/startGuide_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66000000"
+            android:textColor="@color/white"
+            android:text="@string/startGuide_button"
+            android:layout_below="@+id/mMap" />
     </LinearLayout>
 
 </RelativeLayout>

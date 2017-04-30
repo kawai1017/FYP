@@ -96,6 +96,7 @@
 
     </string>
     <string name="transport_title">Transport</string>
-    <string name="button_title">Press here to get Location on Google Map</string>
-
+    <string name="button_title">Press here to get the Direction</string>
+    <string name="startGuide_button">Start the Exibition</string>
+    <string name="exhibit_map">Museum Map</string>
 </resources>

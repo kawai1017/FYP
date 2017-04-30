@@ -53,6 +53,10 @@
             android:configChanges="locale"
             android:label="@string/hkmoh" />
         <activity
+            android:name=".HKMOH_ExhibitActivity"
+            android:configChanges="locale"
+            android:label="@string/hkmoh" />
+        <activity
             android:name=".HKMOH_VisitingInformation"
             android:configChanges="locale"
             android:label="@string/hkmoh" />
@@ -79,11 +83,16 @@
             android:name=".HKHM_TransportActivity"
             android:configChanges="locale"
             android:label="@string/hkhm" />
+        <activity
+            android:name=".HKHM_ExhibitActivity"
+            android:configChanges="locale"
+            android:label="@string/hkhm" />
 
         <activity
             android:name=".HKSM_VisitingInformation"
             android:configChanges="locale"
             android:label="@string/hksm" />
+
 
         <activity
             android:name=".HKSM_MainActivity"
@@ -98,6 +107,11 @@
             android:name=".HKSM_TransportActivity"
             android:configChanges="locale"
             android:label="@string/hksm" />
+        <activity
+            android:name=".HKSM_ExhibitActivity"
+            android:configChanges="locale"
+            android:label="@string/hksm" />
+
 
         <activity
             android:name=".HKSpace_VisitingInformation"
@@ -115,6 +129,10 @@
             android:label="@string/hkspace" />
         <activity
             android:name=".HKSpace_TransportActivity"
+            android:configChanges="locale"
+            android:label="@string/hkspace" />
+        <activity
+            android:name=".HKSpace_ExhibitActivity"
             android:configChanges="locale"
             android:label="@string/hkspace" />
 
