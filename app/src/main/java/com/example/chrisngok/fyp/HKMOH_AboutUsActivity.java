@@ -12,7 +12,7 @@ public class HKMOH_AboutUsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.museum_about_us);
-        getSupportActionBar().setTitle(R.string.hkmoh);
+        getSupportActionBar().setTitle(R.string.about_us);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
 

@@ -12,7 +12,7 @@ public class HKSpace_AboutUsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.museum_about_us);
-        getSupportActionBar().setTitle(R.string.hkspace);
+        getSupportActionBar().setTitle(R.string.about_us);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         startLang = preferences.getString("lang", "");
         ImageView img = (ImageView) findViewById(R.id.imageView3);

@@ -12,7 +12,7 @@ public class MainActivity extends BaseActivity {
     ImageButton hkhm_button;
     ImageButton hksm_button;
     ImageButton hkspace_button;
-    String startlang;
+    String startLang;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.intial_page);
         getSupportActionBar().setTitle(R.string.app_name);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        startlang = preferences.getString("lang", "");
+        startLang = preferences.getString("lang", "");
 
         hkmoh_button = (ImageButton) findViewById(R.id.button_hkmoh);
         hkmoh_button.setOnClickListener(new View.OnClickListener() {
@@ -60,8 +60,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onResume() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        String currentlang = preferences.getString("lang", "");
-        if (!startlang.matches(currentlang)) {
+        String currentLang = preferences.getString("lang", "");
+        if (!startLang.matches(currentLang)) {
             recreate();
         }
         super.onResume();
