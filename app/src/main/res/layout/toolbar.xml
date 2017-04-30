@@ -8,9 +8,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/background_light"
+        android:background="?attr/colorAccent"
         android:elevation="4dp"
-        android:theme="@style/Base.Widget.AppCompat.Light.ActionBar"
-        app:popupTheme="@android:style/Widget.Material.PopupMenu" />
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        android:titleTextColor="@color/white"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu" />
 
 </merge>
