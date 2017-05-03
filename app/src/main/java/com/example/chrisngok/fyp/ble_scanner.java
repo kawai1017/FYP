@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.estimote.coresdk.common.requirements.SystemRequirementsChecker;
@@ -68,7 +69,7 @@ public class ble_scanner extends AppCompatActivity {
     private BeaconManager beaconManager;
     private BeaconRegion region;
     private MediaPlayer mp = null;
-
+    int scanning = 0;
     public static int getImageId(Context context, String imageName) {
         return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
     }
@@ -89,6 +90,7 @@ public class ble_scanner extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         toolbar.setTitle(getString(R.string.ble_title));
+        final Button scanButton = (Button) findViewById(R.id.scan);
         final TextView zone = (TextView) findViewById(R.id.zone);
         final ImageView map = (ImageView) findViewById(R.id.map);
         ListView listView = (ListView) findViewById(R.id.sampleListView);
@@ -164,6 +166,9 @@ public class ble_scanner extends AppCompatActivity {
 
             }
         });
+
+
+
         beaconManager = new BeaconManager(this);
         beaconManager.setRangingListener(new BeaconManager.BeaconRangingListener() {
             @Override
@@ -184,6 +189,23 @@ public class ble_scanner extends AppCompatActivity {
         });
         region = new BeaconRegion("ranged region",
                 UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), null, null);
+        scanButton.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                if (scanning == 0) {
+                    scanning = 1;
+                    scanButton.setText(R.string.button_ble);
+                    beaconManager.stopRanging(region);
+                    Toast.makeText(getApplicationContext(), "Stop finding location...",
+                            Toast.LENGTH_LONG).show();
+                }else{
+                    scanning = 0;
+                    scanButton.setText(R.string.button_ble_off); //change to "Press to turn off"
+                    beaconManager.startRanging(region);
+                    Toast.makeText(getApplicationContext(), "Start finding location...",
+                            Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     @Override

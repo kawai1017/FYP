@@ -96,6 +96,9 @@
     <string name="hkhm_tel">2180 8188</string>
     <string name="hkhm_website1">http://www.heritagemuseum.gov.hk</string>
     <string name="transport_title">交通方法</string>
-    <string name="button_title">按此规划路线</string>
+    <string name="button_title">按此用googleMap取得位置</string>
+    <string name="button_ble">按此寻找你当前的位置</string>
+    <string name="button_ble_off">按此停止寻找当前位置</string>
     <string name="exhibit_map">博物馆地图</string>
+    <string name="startGuide_button">开始导赏</string>
 </resources>

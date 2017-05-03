@@ -43,6 +43,12 @@
             android:layout_height="160dp"
             android:adjustViewBounds="false" />
 
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ble_off" />
+
         <ListView
             android:id="@+id/sampleListView"
             android:layout_width="match_parent"

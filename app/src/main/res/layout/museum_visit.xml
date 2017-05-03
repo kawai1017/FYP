@@ -17,12 +17,13 @@
         android:layout_gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        />
 
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+
         android:layout_gravity="bottom"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"

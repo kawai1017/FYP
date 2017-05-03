@@ -21,8 +21,7 @@
     <string name="hkspace">香港太空館</string>
     <string name="setting">設定</string>
     <string name="text_language">文字語言</string>
-    <string name="transport">交通</string>
-    <string name="app_title"></string>
+    <string name="transport">交通</string><string name="app_title"></string>
 
     <string name="editor_audio_language">導賞語言</string>
     <string name="editor_font_size">字體大小</string>
@@ -98,6 +97,10 @@
     <string name="hkhm_tel">2180 8188</string>
     <string name="hkhm_website1">http://www.heritagemuseum.gov.hk</string>
     <string name="transport_title">交通方法</string>
-    <string name="button_title">按此規劃路線</string>
+    <string name="button_title">按此用googleMap取得位置</string>
+    <string name="button_ble">按此尋找你當前的位置</string>
+    <string name="button_ble_off">按此停止尋找當前位置</string>
+
     <string name="exhibit_map">博物館地圖</string>
+    <string name="startGuide_button">開始導賞</string>
 </resources>
