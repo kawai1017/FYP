@@ -44,23 +44,23 @@ public class ble_scanner extends AppCompatActivity {
         placesByBeacons.put("58317:30163", new ArrayList<String>() {{
             //add("You are now in (Zone A)");
             add("zonea");
-            add("apple");
-            add("kiwi");
-            add("cherry");
+            add("display1");
+            add("display2");
+            add("display3");
         }});
         placesByBeacons.put("15083:17427", new ArrayList<String>() {{
             //add("You are now in (Zone B)");
             add("zoneb");
-            add("orange");
-            add("lemon");
-            add("pear");
+            add("display4");
+            add("display5");
+            add("display6");
         }});
         placesByBeacons.put("5937:37851", new ArrayList<String>() {{
             //add("You are now in (Zone C)");
             add("zonec");
-            add("mango");
-            add("strawberry");
-            add("banana");
+            add("display7");
+            add("display8");
+            add("display9");
         }});
         ITEM_BY_BEACONS = Collections.unmodifiableMap(placesByBeacons);
     }

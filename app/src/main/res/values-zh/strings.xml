@@ -32,24 +32,6 @@
     <string name="font_size_sum">更改字體大小</string>
     <string name="about_des">這個應用程式是ShareLabTrust所開發的。</string>
     <string name="about_title">關於HKMG:</string>
-    <string name="banana_des">關於香蕉的文字介紹</string>
-    <string name="cherry_des">關於車厘子的文字介紹</string>
-    <string name="kiwi_des">關於奇異果的文字介紹</string>
-    <string name="lemon_des">關於檸檬的文字介紹</string>
-    <string name="mango_des">關於芒果的文字介紹</string>
-    <string name="orange_des">關於橙的文字介紹</string>
-    <string name="pear_des">關於梨的文字介紹</string>
-    <string name="strawberry_des">關於士多啤梨的文字介紹</string>
-    <string name="kiwi">奇異果</string>
-    <string name="lemon">檸檬</string>
-    <string name="mango">芒果</string>
-    <string name="orange">橙</string>
-    <string name="pear">梨</string>
-    <string name="strawberry">士多啤梨</string>
-    <string name="apple">蘋果</string>
-    <string name="apple_des">關於蘋果的文字介紹</string>
-    <string name="banana">香蕉</string>
-    <string name="cherry">車厘子</string>
     <string name="voice_en">英文語音介紹</string>
     <string name="voice_za">普通話語音介紹</string>
     <string name="voice_zh">廣東話語音介紹</string>
@@ -103,4 +85,22 @@
 
     <string name="exhibit_map">博物館地圖</string>
     <string name="startGuide_button">開始導賞</string>
+    <string name="display1">展品1</string>
+    <string name="display1_des">展品1的描述</string>
+    <string name="display2">展品2</string>
+    <string name="display3">展品3</string>
+    <string name="display4">展品4</string>
+    <string name="display5">展品5</string>
+    <string name="display6">展品6</string>
+    <string name="display7">展品7</string>
+    <string name="display8">展品8</string>
+    <string name="display9">展品9</string>
+    <string name="display2_des">展品2的描述</string>
+    <string name="display3_des">展品3的描述</string>
+    <string name="display4_des">展品4的描述</string>
+    <string name="display5_des">展品5的描述</string>
+    <string name="display6_des">展品6的描述</string>
+    <string name="display7_des">展品7的描述</string>
+    <string name="display8_des">展品8的描述</string>
+    <string name="display9_des">展品9的描述</string>
 </resources>
