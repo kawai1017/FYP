@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="font_size">
-        <item>S</item>
-        <item>M</item>
-        <item>L</item>
-    </string-array>
-
-    <string-array name="audio_language">
-        <item>Cantonese</item>
-        <item>Putonghua</item>
-        <item>English</item>
-    </string-array>
-
     <string-array name="text_language">
         <item>Traditional Chinese</item>
         <item>Simplified Chinese</item>
